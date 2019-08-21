@@ -1,4 +1,4 @@
-// 数组的concat方法实现
+// concat() 方法用于合并两个或多个数组。此方法不会更改现有数组，而是返回一个新数组。
 
 //  forEach解决for in 遍历出原型链上自定义的属性
 // Array.prototype.concat1 = function () {

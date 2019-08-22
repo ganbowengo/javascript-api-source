@@ -21,7 +21,7 @@ Array.prototype.every1 = function (callbackFn, thisArg) {
     return true
 }
 
-console.log([1,3,2,4].every(item => item >= 1))
+console.log([1,3,2,4].every1(item => item >= 2))
 
 /**
  * 注意问题

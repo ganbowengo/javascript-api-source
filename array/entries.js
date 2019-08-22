@@ -50,7 +50,7 @@ console.log(b.next())
 /**
  * 遇到问题
  * 1.iterator的实现？
- *   原生具备 Set Map Array String 函数的arguments对象 Nodelist
+ *   原生具备iterator的内置对象 Set Map Array String 函数的arguments对象 Nodelist
  * 2.通过闭包实现next的函数
  *  闭包： 函数的外部引用导致函数执行环境栈得不到释放
  * 3.创建一个Class=>function 可以设置原型链上的方法 在class中使用=>实例生成时调用

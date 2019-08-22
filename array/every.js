@@ -27,5 +27,4 @@ console.log([1,3,2,4].every1(item => item >= 2))
  * 注意问题
  * 1.回调函数传参是由函数自己内部决定的
  * 2.call第一位的参数要绑定的this是null || undefined时 指向window or global
- * 
  */

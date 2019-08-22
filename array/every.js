@@ -16,6 +16,7 @@ Array.prototype.every1 = function (callbackFn, thisArg) {
                 return false
             }
         }
+        k++
     }
     return true
 }

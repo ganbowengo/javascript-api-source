@@ -30,3 +30,9 @@ Array.prototype.flatMap1 = function (callbackFn /* ,thisArg */ ) {
 let a = [1, 2, 3, 4]
 console.log(a.flatMap1(item => [[item * 2]]))
 console.log(a)
+/**
+ * 注意问题
+ * flatMap 不改变原数组 只返回一个新数组
+ * 只会将回调函数中返回的值扁平化一层
+ * 
+ */

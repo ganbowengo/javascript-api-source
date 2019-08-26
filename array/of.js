@@ -3,7 +3,7 @@
 // 而 Array(7) 创建一个长度为7的空数组（注意：这是指一个有7个空位(empty)的数组，而不是由7个undefined组成的数组）。
 Array.of1 = function(){
     let O = new Array()
-    let len = arguments.length
+    let len = arguments.length >>> 0
     let k = 0
     while(k < len){
         O[k] = arguments[k]
@@ -19,3 +19,5 @@ Array.of1 = function(){
  *    return Array.prototype.slice.call(arguments)
  * 
  */
+
+ console.log(Array.of1(1,2,3,4))

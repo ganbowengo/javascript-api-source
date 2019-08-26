@@ -3,7 +3,7 @@ Array.prototype.keys1 = function () {
         throw new TypeError('this is null or defined')
     }
     let O = Object(this)
-    let len = O.length
+    let len = O.length >>> 0
     let index = -1
     return {
         next: function () {

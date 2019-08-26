@@ -5,7 +5,7 @@ Array.prototype.join1 = function(/* separator */){
         throw new TypeError('this is null or defined')
     }
     let O = Object(this)
-    let len = O.length
+    let len = O.length >>> 0
     if(len === 0) return ''
     let separator = arguments.length > 0 ? arguments[0] : ','
     separator = '' + separator

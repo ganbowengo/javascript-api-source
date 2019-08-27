@@ -25,3 +25,8 @@ Array.prototype.slice1 = function ( /* begin,end */ ) {
 let a = [1, 2, 3, 4, 5, 6, 7]
 console.log(a.slice1(-1,-5))
 console.log(a)
+/**
+ * 注意问题
+ * 1. begin 大与 end 时 返回[]
+ * 
+ */

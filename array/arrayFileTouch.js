@@ -37,7 +37,6 @@ let arr = ['from',
     'sort',
     'splice',
     'toLocaleString',
-    'toSource',
     'toString',
     'unshift',
     'values'

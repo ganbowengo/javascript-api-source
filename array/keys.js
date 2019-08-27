@@ -1,3 +1,4 @@
+// keys() 方法返回一个包含数组中每个索引键的Array Iterator对象。
 Array.prototype.keys1 = function () {
     if (this == null) {
         throw new TypeError('this is null or defined')

@@ -17,7 +17,6 @@ let arr = [
     'toFixed',
     'toLocaleString',
     'toPrecision',
-    'toSource',
     'toString',
     'valueOf'
 ]

@@ -19,8 +19,6 @@ let arr = [
     'lastIndexOf',
     'localeCompare',
     'match',
-    'matchAll',
-    'normalize',
     'padEnd',
     'padStart',
     'repeat',

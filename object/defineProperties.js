@@ -50,3 +50,10 @@ Object.defineProperties = function (obj, properties) {
 
     return obj;
 }
+
+/**
+ * 注意问题
+ * 1. set get 默认都是undefined 赋值时只能是函数
+ * 2. configurable\\enumerable\\writable 是否可配置-一级优先升级 ->  是否可枚举  是否可写
+ * 
+ */

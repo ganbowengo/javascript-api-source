@@ -15,4 +15,5 @@ Object.create1 = function (proto, propertiesObject) {
 /**
  * 注意问题
  * 1. 如果propertiesObject参数是 null 或非原始包装对象，则抛出一个 TypeError 异常。
+ * 2. propertiesObject 是一个对象是时 会将对象中的属性浅拷贝到新创建的对象中
  */

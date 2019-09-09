@@ -14,11 +14,52 @@ Object.assign1 = function (target) {
             }
         }
     }
+    return O
 }
 
-console.log(Object.assign({b:1}, {
+/**
+ * 性能优化版本
+ */
+Object.assign2 = function (target) {
+    if (target == null) {
+        throw new TypeError('Cannot convert undefined or null to object');
+    }
+    let O = Object(target)
+    let args = arguments.length >>> 0
+    let index = 1
+    while (index < args) {
+        let nextSource = arguments[index];
+        index++
+        if (!nextSource) continue
+        let keys = Object.keys(nextSource)
+        let len = keys.length >>> 0
+        let i = 0
+        while (i < len) {
+            let key = keys[i]
+            i++
+            if (Object.prototype.hasOwnProperty.call(nextSource, key)) {
+                O[key] = nextSource[key];
+            }
+        }
+    }
+    return O
+}
+
+console.time()
+console.log(Object.assign1({
+    b: 1
+}, {
     a: 1
 }))
+console.timeEnd()
+
+console.time()
+console.log(Object.assign2({
+    b: 1
+}, {
+    a: 1
+}))
+console.timeEnd()
 
 /**
  * 注意问题

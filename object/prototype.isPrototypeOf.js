@@ -33,11 +33,11 @@ console.log(Object.prototype.isPrototypeOf1(baz)); // true
  * 
  * 原型链问题
  * 1. 每个实例的__proto__指向自己的原型对象
- * 2. 每个函数都通过prototype指向自己的原型
- * 3. 每个原型对象都通过constructor 构造函数指向函数本身
+ * 2. 每个函数都通过prototype指向自己的原型对象
+ * 3. 每个原型对象都通过constructor 构造函数指向函数本身 __proto__ 指向上一级原型对象
  * function F(){}
  * F.prototype === {constructor: F(){},__proto__:Object.prototype}
  * var f = new F()
- * f.prototype === undefined
+ * f.prototype === undefined // 实例没有prototype属性
  * f.__proto__ === {constructor: F(){},__proto__:Object.prototype}
  */

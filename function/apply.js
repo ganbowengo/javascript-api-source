@@ -3,7 +3,7 @@
 Function.prototype.apply1 = function (_this) {
     _this = _this || window || global
     let args = arguments[1] || []
-    let fn = Symbol()
+    let fn = Symbol('fn')
     _this[fn] = this
     let result = _this[fn](...args)
     delete _this[fn]

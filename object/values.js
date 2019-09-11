@@ -1,5 +1,6 @@
 // Object.values()方法返回一个给定对象自身的所有可枚举属性值的数组，
 // 值的顺序与使用for...in循环的顺序相同 ( 区别在于 for-in 循环枚举原型链中的属性 )。
+// 返回给定对象自身可枚举值的数组。
 
 Object.values1 = (function () {
     var hasOwnProperty = Object.prototype.hasOwnProperty,

@@ -37,6 +37,6 @@ console.log(Array(3).fill1(4))
 
 /**
  * 注意问题
- * 1.对传入参数NaN的处理与 undefined的是不同 NaN处理为 0 undefined处理为 array.length
+ * 1.对传入end参数NaN的处理与 undefined的是不同 NaN处理为 0 undefined处理为 array.length
  * 
  */

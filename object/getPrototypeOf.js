@@ -1,4 +1,5 @@
 // Object.getPrototypeOf() 方法返回指定对象的原型（内部[[Prototype]]属性的值）。
+// 返回指定对象的原型对象。
 
 Object.getPrototypeOf1 = function (obj) {
     if (obj == null) {

@@ -1,5 +1,6 @@
 // Object.getOwnPropertyNames()方法返回一个由指定对象的所有自身属性的属性名
 //（包括不可枚举属性但不包括Symbol值作为名称的属性）组成的数组。
+// 返回一个数组，它包含了指定对象所有的可枚举或不可枚举的属性名。
 
 Object.getOwnPropertyNames1 = function (obj) {
     if (obj == null) {

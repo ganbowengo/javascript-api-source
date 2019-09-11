@@ -15,7 +15,7 @@ Array.prototype.find1 = function (callbackFn) {
             return O[k]
         }
     }
-    return undefined
+    // return undefined  // 默认会返回undefined
 }
 
 console.log([4, 6, 8, 12].find1(e => e > 3))

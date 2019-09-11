@@ -13,7 +13,7 @@ Array.prototype.splice = function ( /*start,deleteCount,item1,item2 */ ) {
     let arrLen = len + addCount - deleteCount
     let R = new Array(deleteCount)
     while () {
-
+        
     }
     return R
 }

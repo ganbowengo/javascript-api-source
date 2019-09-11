@@ -1,4 +1,5 @@
 // Object.getOwnPropertySymbols() 方法返回一个给定对象自身的所有 Symbol 属性的数组。
+// 返回一个数组，它包含了指定对象自身所有的符号属性。
 
 /**
  * 注意

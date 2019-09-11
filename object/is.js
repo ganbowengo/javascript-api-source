@@ -1,4 +1,5 @@
 // Object.is() 方法判断两个值是否是相同的值。
+// 比较两个值是否相同。所有 NaN 值都相等（这与==和===不同）。
 Object.is1 = function (obj1, obj2) {
     if (obj1 === obj2) {
         return obj1 !== 0 || 1 / obj1 === 1 / obj2

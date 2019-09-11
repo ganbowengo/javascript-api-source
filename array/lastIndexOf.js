@@ -17,4 +17,8 @@ Array.prototype.lastIndexOf1 = function (target /*, fromIndex */ ) {
     return -1
 }
 
-console.log([1,2,3].lastIndexOf1(1,3))
+console.log([1,2,3].lastIndexOf1(1,2))
+/**
+ * 注意 
+ * 1. fromIndex 是从后向前找 到fromIndex处停止
+ */

@@ -15,3 +15,8 @@ String.prototype.endsWith1 = function (search) {
 const str1 = 'Cats are the best!';
 
 console.log(str1.endsWith1('best', 17));
+
+/**
+ * 
+ * 第二个参数 是从前向后的起始位置
+ */

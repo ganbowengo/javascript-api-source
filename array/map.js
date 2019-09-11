@@ -18,3 +18,9 @@ Array.prototype.map1 = function (callbackFn /* ,thisArg */ ) {
 }
 
 console.log([1,2,4,5].map(item => item * 2))
+/**
+ * 
+ * 注意
+ * 1. 返回一个新数组
+ * 2. 不改变原数组
+ */

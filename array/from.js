@@ -4,6 +4,7 @@ Array.from1 = function (arraylink /* ,callbackFn,thisArg */ ) {
     let O = this
     let items = (function (arraylink) {
         let O = []
+        // Object.prototype.toString.call(arraylink) === '[object Set]'
         if (arraylink.size > 0 && arraylink.values) { // 当前是Set
             let values = arraylink.values()
             let it = values.next()

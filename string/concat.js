@@ -12,6 +12,10 @@ String.prototype.concat1 = function(){
 
 var hello = "Hello, ";
 console.log(hello.concat1("Kevin", " have a nice day."));
+console.log(hello);
+
+// Hello, Kevin have a nice day.
+// Hello, 
 
 /**
  * 注意问题

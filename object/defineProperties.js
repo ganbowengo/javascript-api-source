@@ -1,4 +1,5 @@
-// Object.defineProperties() 方法直接在一个对象上定义新的属性或修改现有属性，并返回该对象。
+// Object.defineProperties() 方法直接在一个对象上定义新的属性或修改现有属性，并返回该对象。  
+// 给对象添加多个属性并分别指定它们的配置。
 Object.defineProperties = function (obj, properties) {
     function convertToDescriptor(desc) {
         function hasProperty(obj, prop) {

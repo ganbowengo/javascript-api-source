@@ -31,6 +31,7 @@ console.log(array1);
 /**
  * 注意问题
  * 1. 与reduce的功能与参数相同 从后向前叠加
+ * 2. 第二个参数没有时 使用最后一项为初始值 并从倒数第二项开始遍历
  */
 [{vId: 1, aId: 1},{vId: 1, aId: 2},{vId: 2, aId: 1}].reduce((sum,current)=>{
     

@@ -21,7 +21,7 @@ String.prototype.padStart1 = function (targetLength) {
     }
 }
 
-console.log('abc'.padStart1(10, "foo"))
+console.log('abc'.padStart1(10, "foo")) // foofoofabc
 
 
 /**

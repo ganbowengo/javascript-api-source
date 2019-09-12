@@ -21,7 +21,9 @@ String.prototype.padEnd1 = function (targetLength) {
     }
 }
 
-console.log(typeof 'abc'.padEnd1(3, "foo"))
+console.log('abc'.padEnd1(6, "foo")) // abcfoo
+console.log('abc'.padEnd1(4, "foo")) // abcf
+console.log('abc'.padEnd1(9, "foo")) // abcfoofoo
 
 
 /**

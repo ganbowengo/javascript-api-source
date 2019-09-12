@@ -25,7 +25,8 @@ String.prototype.repeat1 = function (count) {
     return R
 }
 
-console.log("abc".repeat1(NaN))
+console.log("abc".repeat1(NaN)) // ''
+console.log("abc".repeat1(2)) // 'abcabc'
 /**
  * 注意问题 
  * 1. 当参数为NaN时 默认为0
